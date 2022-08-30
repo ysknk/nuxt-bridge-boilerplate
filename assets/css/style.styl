@@ -1,0 +1,110 @@
+@import './config'
+
+// font_face('NotoSansCJKjp', 'Noto Sans CJK JP', 'DemiLight', 300, normal)
+// font_face('NotoSansCJKjp', 'Noto Sans CJK JP', 'Regular', 400, normal)
+// font_face('NotoSansCJKjp', 'Noto Sans CJK JP', 'Medium', 500, normal)
+// font_face('NotoSansCJKjp', 'Noto Sans CJK JP', 'Bold', 700, normal)
+
+html
+  global-reset()
+  reset-html5()
+
+body
+  overscroll-behavior-y none
+
+#app
+  overflow hidden
+  font-family $font_family
+
+  // font-size ($fpc)px
+  font-size (($fpc / ($wpc)) * 100)vw
+  +break_point(sp)
+    font-size (($fsp / ($wsp)) * 100)vw
+  @media (min-width: unit($wpc, 'px'))
+    font-size ($fpc)px !important
+
+  line-height $lh
+
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  -webkit-text-size-adjust 100%
+
+  -webkit-print-color-adjust exact
+
+  font-feature-settings 'palt' 1
+
+  color $font_color_default
+  break_word()
+
+  // min-width 320px
+
+  .display-inline-block
+    display inline-block
+
+  +break_point('pc')
+    .display-none
+      &--pc
+        display none !important
+
+  +break_point('sp')
+    .display-none
+      &--sp
+        display none !important
+
+#app
+  position relative
+  top 0
+  left 0
+  z-index 1
+
+button,
+a
+  link_style($color_sub, none, $color_sub, none)
+  &:focus
+    outline none
+
+button
+  margin 0
+  padding 0
+  background none
+  appearance none
+  line-height inherit
+  border none
+  font-size inherit
+  font-family inherit
+  font-weight inherit
+  outline none
+  color inherit
+  &::-moz-focus-inner
+    border none
+
+input
+  appearance none
+  border-radius 0
+  color inherit
+  &:focus
+    outline none
+
+select,
+input[type="submit"],
+button,
+label
+  color inherit
+  cursor pointer
+
+select
+  appearance none
+  border none
+  outline none
+  background transparent
+
+img,
+svg
+  max-width 100%
+  width 100%
+  height auto
+  vertical-align top
+
+picture
+  max-width 100%
+
