@@ -1,4 +1,4 @@
-type TState = {
+export type TState = {
   hoge?: string
   huga: string
 }
