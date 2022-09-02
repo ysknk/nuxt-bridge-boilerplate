@@ -1,4 +1,4 @@
-type TState = {
+export type TState = {
   gtm?: {
     event?: string
     eventCategory?: string
