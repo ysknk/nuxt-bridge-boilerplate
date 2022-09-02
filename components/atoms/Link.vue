@@ -18,13 +18,13 @@ if (props.target !== '_self' && !props.rel) {
 </script>
 
 <template lang="pug">
-  span.link
-    template(v-if="!props.target || props.target === '_self'")
-      NuxtLink(:to="props.to")
-        slot
-    template(v-else)
-      a(:href="props.to" :target="props.target" :rel="rel")
-        slot
+span.link
+  template(v-if="!props.target || props.target === '_self'")
+    NuxtLink(:to="props.to")
+      slot
+  template(v-else)
+    a(:href="props.to" :target="props.target" :rel="rel")
+      slot
 </template>
 
 <style lang="stylus" scoped>
