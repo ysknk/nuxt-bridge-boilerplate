@@ -8,11 +8,11 @@ useSEO({
 </script>
 
 <template lang="pug">
-  div
-    p {{ foo.state.value.hoge }}
+div
+  p {{ foo.state.value.hoge }}
 
-    div(style="height:2000px;background:#ccc;")
+  div(style="height:2000px;background:#ccc;")
 
-    AtomsLink(to="/") index
+  AtomsLink(to="/") index
 </template>
 
