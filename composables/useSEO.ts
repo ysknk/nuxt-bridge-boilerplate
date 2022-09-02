@@ -1,4 +1,4 @@
-type TState = {
+export type TState = {
   title?: string
   url?: string
   description?: string
