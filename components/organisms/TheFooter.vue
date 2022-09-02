@@ -1,6 +1,6 @@
 <template lang="pug">
-  footer#footer
-    small footer
+footer#footer
+  small footer
 </template>
 
 <style lang="stylus" scoped>
