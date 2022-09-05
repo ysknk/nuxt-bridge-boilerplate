@@ -18,7 +18,7 @@ if (props.target !== '_self' && !props.rel) {
 </script>
 
 <template lang="pug">
-span.link
+span.c-link
   template(v-if="!props.target || props.target === '_self'")
     NuxtLink(:to="props.to")
       slot
@@ -28,6 +28,6 @@ span.link
 </template>
 
 <style lang="stylus" scoped>
-.link
+.c-link
   display inline-block
 </style>
