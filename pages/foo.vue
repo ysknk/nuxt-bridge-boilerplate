@@ -8,7 +8,7 @@ useSEO({
 </script>
 
 <template lang="pug">
-div
+.page
   p {{ foo.state.value.hoge }}
 
   div(style="height:2000px;background:#ccc;")
