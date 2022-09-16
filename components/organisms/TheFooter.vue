@@ -1,9 +1,9 @@
 <template lang="pug">
-footer#footer
+footer.o-footer#footer
   small footer
 </template>
 
 <style lang="stylus" scoped>
-footer
+.o-footer
   display block
 </style>
