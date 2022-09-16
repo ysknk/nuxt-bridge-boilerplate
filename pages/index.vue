@@ -21,7 +21,7 @@ onMounted(() => {
 </script>
 
 <template lang="pug">
-div
+.page
   p {{ foo.state.value.hoge }}
   p {{ foo.state.value.huga }}
   p {{ foo.getState() }}
