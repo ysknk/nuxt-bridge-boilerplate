@@ -1,9 +1,9 @@
 <template lang="pug">
-header#header
+header.o-header#header
   h1 header
 </template>
 
 <style lang="stylus" scoped>
-header
+.o-header
   display block
 </style>
