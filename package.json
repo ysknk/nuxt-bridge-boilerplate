@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "nuxi dev",
-    "start": "nuxi preview",
-    "build": "nuxi generate",
+    "start": "nuxt start",
+    "build": "nuxt generate",
     "generate": "NUXT_ENV=\"development\" npm run build",
     "dev:staging": "cross-env NUXT_ENV=\"staging\" npm run dev",
     "generate:staging": "cross-env NUXT_ENV=\"staging\" npm run build",
