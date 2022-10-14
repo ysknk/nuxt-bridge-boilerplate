@@ -1,6 +1,10 @@
 import { gtm } from './nuxt.config.analytics'
+import { env } from './nuxt.config.env'
 
-export const url:string = 'https://example.com'
+const baseURL = env.public.baseURL || ''
+
+export const url:string = `https://example.com${baseURL}`
+
 export const title:string = 'nuxt-bridge-boilerplate'
 export const description:string =  'nuxt-bridge-boilerplate'
 export const keywords:string[] =  ['']
