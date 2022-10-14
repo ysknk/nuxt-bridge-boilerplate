@@ -2,6 +2,8 @@ import { defineNuxtConfig } from '@nuxt/bridge'
 import head from './nuxt.config.head'
 import { env } from './nuxt.config.env'
 
+const baseURL = env.public.baseURL || '/'
+
 export default defineNuxtConfig({
   bridge: {
     capi: true,
@@ -94,12 +96,12 @@ export default defineNuxtConfig({
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
-  // generate: {
-  //   dir: ''
-  // },
+  generate: {
+    dir: `dist${baseURL}`
+  },
 
   router: {
-    base: env.public.baseURL,
+    base: baseURL,
     extendRoutes(routes:any, resolve:any) {
       for (const route of routes) {
         route.alias = resolve(route.path, 'index.html')
