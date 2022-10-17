@@ -1,7 +1,7 @@
 import { gtm } from './nuxt.config.analytics'
 import { env } from './nuxt.config.env'
 
-const baseURL = env.public.baseURL || ''
+const baseURL = env.public.baseURL || '/'
 
 export const url:string = `https://example.com${baseURL}`
 
@@ -32,7 +32,7 @@ export default {
 
   meta,
 
-  link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+  link: [{ rel: 'icon', type: 'image/x-icon', href: `${baseURL}favicon.ico` }],
 
   script: [
     gtm.id && {
