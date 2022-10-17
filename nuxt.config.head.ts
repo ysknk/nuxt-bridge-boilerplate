@@ -18,11 +18,11 @@ export const meta = [
 
   { hid: 'canonical', name: 'canonical', content: url },
 
-  { hid: 'og:title', name: 'og:title', content: title },
-  { hid: 'og:type', name: 'og:type', content: 'article' },
-  { hid: 'og:description', name: 'og:description', content: description },
-  { hid: 'og:url', name: 'og:url', content: url },
-  { hid: 'og:site_name', name: 'og:site_name', content: title },
+  { hid: 'og:title', property: 'og:title', content: title },
+  { hid: 'og:type', property: 'og:type', content: 'article' },
+  { hid: 'og:description', property: 'og:description', content: description },
+  { hid: 'og:url', property: 'og:url', content: url },
+  { hid: 'og:site_name', property: 'og:site_name', content: title },
 
   { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
 ]
