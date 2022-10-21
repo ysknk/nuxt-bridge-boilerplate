@@ -33,5 +33,5 @@ img.a-image(
 
 <style lang="stylus" scoped>
 .a-image
-  display inline-block
+  display block
 </style>
