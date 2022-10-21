@@ -28,6 +28,10 @@ export const meta = [
 ]
 
 export default {
+  htmlAttrs: {
+    lang: 'ja'
+  },
+
   title,
 
   meta,
