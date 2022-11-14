@@ -32,9 +32,9 @@ export default {
     lang: 'ja'
   },
 
-  title,
-
   meta,
+
+  title,
 
   link: [{ rel: 'icon', type: 'image/x-icon', href: `${baseURL}favicon.ico` }],
 
