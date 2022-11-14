@@ -89,6 +89,7 @@ export default defineNuxtConfig({
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
+      crossorigin: 'use-credentials',
       lang: 'ja',
     },
   },
