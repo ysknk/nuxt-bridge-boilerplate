@@ -6,8 +6,8 @@ const baseURL = env.public.baseURL || '/'
 export const url:string = `https://example.com${baseURL}`
 
 export const title:string = 'nuxt-bridge-boilerplate'
-export const description:string =  'nuxt-bridge-boilerplate'
-export const keywords:string[] =  ['']
+export const description:string = 'nuxt-bridge-boilerplate'
+export const keywords:string[] = ['']
 
 export const meta = [
   { hid: 'charset', charset: 'utf-8' },
